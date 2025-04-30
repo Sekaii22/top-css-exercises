@@ -9,6 +9,17 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  /*Added CSS*/
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-areas: 
+    "header header" 
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
+  gap: 15px;
 }
 
 .container div {
@@ -22,22 +33,37 @@ html {
 
 .header {
   background-color: #006157;
+
+  /*Added CSS*/
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #005B94;
+
+  /*Added CSS*/
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #642cde;
+
+  /*Added CSS*/
+  grid-area: nav;
 }
 
 .article {
   background-color: #7E1DC3;
+
+  /*Added CSS*/
+  grid-area: article;
 }
 
 .footer {
   background-color: #393f4d;
+
+  /*Added CSS*/
+  grid-area: footer;
 }
 
 .article p {
